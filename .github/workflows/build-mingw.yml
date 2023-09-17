@@ -58,6 +58,10 @@ jobs:
             cmake.exe -G"MinGW Makefiles" ^
             -DCMAKE_BUILD_TYPE=Release ^
             -DBUILD_SHARED_LIBS=OFF ^
+            -Dimmer_BUILD_TESTS=OFF ^
+            -Dimmer_BUILD_EXAMPLES=OFF ^
+            -Dimmer_BUILD_DOCS=OFF ^
+            -Dimmer_BUILD_EXTRAS=OFF ^
             -DCMAKE_INSTALL_PREFIX="cmake-build/${{ env.cmakeInstallationPath }}" -B./cmake-build &&^
             cd cmake-build && cmake --build . && cmake --install . 
             
