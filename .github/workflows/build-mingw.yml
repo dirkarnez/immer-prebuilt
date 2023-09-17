@@ -25,7 +25,6 @@ jobs:
       libraryName: immer
       cmakeInstallationPath: immer-installation
       tagName: v0.8.0
-      mingwTargetZip: immer-${{ github.ref_name }}-mingw64-x86_64-posix-seh-rev0-8.1.0.zip
     steps:
       - name: git clone
         shell: cmd
